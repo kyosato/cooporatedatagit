@@ -1,5 +1,6 @@
 @charset "UTF-8";
 body  {
+    font-family:'游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     background-image: url("../images/68mono.jpg");
     /* 全体の背景画像 */
     background-size: 100%;
@@ -31,7 +32,7 @@ header  ul li{
 #logo {
 	position:scroll;
 	text-align: center;
-	margin-top:250px;
+	margin-top:150px;
 	width:100%;
 }
 h1 {
@@ -85,4 +86,20 @@ margin-top: 500px;
 .djs img {
 	float: left;
 	width:50%;
+}
+
+.form-group {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
+.form-control {
+	background-color: #000;
+	margin:10px auto;
+	opacity:0.7;
+}
+button {
+	background-color: #bbbbbb;
+	color:black;
+	opacity:0.7;
 }
