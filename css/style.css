@@ -53,14 +53,7 @@ h1 {
 
 }
 
-.facebook-header {
-	width: 32px;
-	height: 32px;
-	background-repeat: no-repeat;
-	border: solid 1px;
-	border-radius: 3px;
-}
-.twitter-header  {
+.facebook-header ,.twitter-header,.instagram-header,.mixcloud-header,.youtube-header{
 	width: 32px;
 	height: 32px;
 	background-repeat: no-repeat;
