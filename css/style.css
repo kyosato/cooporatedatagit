@@ -1,0 +1,95 @@
+@charset "UTF-8";
+body  {
+    background-image: url("../images/68mono.jpg");
+    /* 全体の背景画像 */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* 背景を繰り返さない */
+    background-position: 50% 50%;
+    /* 背景画像の位置は画面中央 */
+    background-attachment: fixed;
+    /* 背景画像を固定する */
+    display: block;
+    background-color: black;
+    color: #ffffff;
+}
+#global-nav {
+	color: #ffffff;
+}
+header ul {
+	text-align: center
+}
+header  ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 5px 30px ;
+}
+
+/*
+#social-icons-top .social-header ul li {
+}*/
+#logo {
+	position:scroll;
+	text-align: center;
+	margin-top:250px;
+	width:100%;
+}
+h1 {
+	margin-bottom: 0;
+}
+.social-header   {
+	width:100%;
+	height:50%;
+	text-align:center;
+	position: scroll;
+
+}
+.social-header  ul {
+	margin-top: 0;
+}
+.social-header  ul li {
+	list-style-type: none;
+	display: inline-block;
+
+}
+
+.facebook-header {
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	border: solid 1px;
+	border-radius: 3px;
+}
+.twitter-header  {
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	border: solid 1px;
+	border-radius: 3px;
+}
+
+#about {
+	width: 90%;
+	margin: 0 auto;
+}
+#about h2 {
+	font-size: 32px;
+	margin-bottom: 0px;
+}
+
+p {
+	color:black;
+}
+a {
+		text-decoration: none;
+		color:#ffffff;
+}
+
+#contents {
+margin-top: 500px;
+}
+
+.djs img {
+	float: left;
+	width:50%;
+}
