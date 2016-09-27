@@ -6,6 +6,7 @@ body {
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
     margin:0;
+    width:100%;
 }
 
 @keyframes fadeIn {
@@ -60,18 +61,19 @@ header {
 
 
 #top {
-    position: absolute;
-    top: -10px;
-    left: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
-    background-image: url("../images/demo14.jpg");
+    padding:0;
+    background-image: url("../images/68mono_resize.jpg");
     background-position: center center;
     /* 全体の背景画像 */
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #fff;
-    z-index: -1;
+    z-index: -2;
 }
 
 
@@ -80,15 +82,16 @@ header {
 }*/
 
 h1 {
+    display:block;
     font-family: 'Megrim', cursive;
     color: rgba(255, 255, 255, 1);
     font-size: 100px;
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 0;
     position: scroll;
     width: 100%;
     text-align: center;
-    // background-color:rgba(0,0,37,0.3);
+    background-color:rgba(0,0,90,.3);
 }
 
 h2 {
@@ -120,14 +123,17 @@ p {
     	    text-align: center;
     	    padding-left: 0;
         margin-top: 0;
+        margin-bottom:0;
         li {
             list-style-type: none;
             display: inline-block;
             margin: 5px;
+            margin-top:10px;
                 text-align: center;
             &:hover {
-                border: #fff solid 1px;
+                border: red solid 1px;
             }
+
         }
     }
 }
@@ -140,16 +146,23 @@ p {
     width: 32px;
     height: 32px;
     background-repeat: no-repeat;
-    border: #bbbbbb solid 1px;
+    border: #fff solid 1px;
     border-radius: 3px;
+}
+.facebook-header :hover {
+     width: 32px;
+    height: 32px;
+    background-image: url("../images/icon2/twitter.png");
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .scroll {
-	margin-top:100px;
+	margin-top:80px;
 	text-align: center;
 }
 .scroll a {
-	padding-top: 80px;
+	padding-top: 30px;
 }
 .scroll a span {
 	display:block;
@@ -207,6 +220,11 @@ p {
 
 /* ここからabout & Jquery*/
 
+#linkabout {
+         height:10px;
+        margin-top: 79px;
+        margin-bottom:40px;
+}
 .area01 {
     position:absolute;
      width:100%;
@@ -219,23 +237,34 @@ p {
     color:#000;
     text-align: center;
     margin: 0;
-    margin-top: 40px;
-    padding-top: 10px;
+    // margin-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     // width: 90%;
 }
 #about h2{
     color: black;
+    font-weight:bold;
     margin: 0;
 }
 .abouth2 {
     margin-bottom:0px;
     background-color: #fff;
+    height:60px;
     text-align: center;
     display: block;
 }
+
+.bx-viewport {
+    background-color: #fff;
+    color:#000;
+    margin-top:-25px;
+}
+
+
 .djs {
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 0 10px;
 }
 
@@ -248,37 +277,66 @@ p {
 
 
 #profile {
-    margin-top: 150px;
-    text-align: center;
-    line-height: 2em;
+    margin-top: -20px;
+    line-height: 3.5em;
+    vertical-align:middle;
 }
 
 .profile_name {
-    float: right;
-    padding-right:100px;
+    float: left;
+    margin-left:130px;
+    padding-top: 150px;
     text-align: center;
-    color: black;
+    color: #000;
     font-size: 3em;
 }
 
+.djs-text {
+    margin-top:0px;
+    float: left;
+}
 .profile_japanese {
     float: left;
+    text-align: left;
+    margin-top:5px;
+    margin-bottom:0;
+        color: #000;
 }
 
 .profile_english {
     float: left;
-    margin-bottom: 100px;
+    margin-top:0;
+    margin-bottom: 50px;
+     text-align: left;
+         color: #000;
 }
 
 
 /* ここからnews*/
+#news {
+    background-color: #fff;
+    color:#000;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    padding-top: 0px;
+    // width: 90%;
+}
+#news h2{
+    color: black;
+    margin: 0;
+}
 
+p.news-text {
+    color:#fff;
+}
 .area02 {
+    display:block;
     width: 100%;
     background-image: url("../images/djtablemono.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5px;
+    padding: 0px;
 }
 
 /* ここからVideo*/
