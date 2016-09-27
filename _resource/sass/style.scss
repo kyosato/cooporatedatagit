@@ -73,7 +73,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #fff;
-    z-index: -2;
+    z-index: -3;
 }
 
 
@@ -220,6 +220,11 @@ p {
 
 /* ここからabout & Jquery*/
 
+// #about .bx-viewport {
+//     background:#fff;
+// }
+
+
 #linkabout {
          height:10px;
         margin-top: 79px;
@@ -229,6 +234,7 @@ p {
     position:absolute;
      width:100%;
     left:0;
+    z-index:1;
 }
 
 
@@ -311,43 +317,65 @@ p {
          color: #000;
 }
 
+/* ここからschejule*/
+
+.area02 {
+    width: 100%;
+    height:700px;
+    z-index: 2;
+}
+
+#top02 {
+    height:700px;
+    background-image:url("../images/djtablemono.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+.area02 h2 {
+    margin-top: 0;
+    padding: 30px 0 30px;
+    text-align: center;
+}
+
+#schejule .bx-viewport {
+    background:transparent;
+    z-index:1;
+}
+
+
+table {
+    padding: 0 100px 0 10px;
+}
+#schejule .bx-wrapper {
+    height: 600px;
+}
+
+
+
 
 /* ここからnews*/
-#news {
-    background-color: #fff;
-    color:#000;
-    text-align: center;
-    margin: 0;
-    margin-top: 30px;
-    padding-top: 0px;
-    // width: 90%;
-}
-#news h2{
-    color: black;
-    margin: 0;
-}
+
+//
+
+
+// #news {
+//     background-color: #fff;
+//     background-image: url("../images/demo14.jpg");
+//     position:scroll;
+//     color:#000;
+//     text-align: center;
+//     margin: 0;
+//     // width: 90%;
+// }
+//
 
 p.news-text {
     color:#fff;
 }
-.area02 {
-    display:block;
-    width: 100%;
-    background-image: url("../images/djtablemono.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0px;
-}
 
-/* ここからVideo*/
-
-.area03 {
-    width: 100%;
-    background-image: url("../images/djtablemono.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5px;
-}
 .area05 {
     width: 100%;
     background-image: url("../images/kansyumono.jpg");
@@ -387,6 +415,7 @@ th {
 
 thead {
     font-weight: bold;
+    color: #fff;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     .date {
@@ -401,5 +430,6 @@ thead {
 }
 
 td {
+    color: #fff;
     text-align: center;
 }
