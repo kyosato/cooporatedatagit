@@ -112,7 +112,7 @@ a:hover {
   color: #666666;
 }
 
-p {
+#about p {
   color: #000;
   padding: 10px;
   padding-right: 100px;
@@ -394,7 +394,6 @@ table td {
   margin-top: 79px;
   background-color: #fff;
   color: #000;
-  text-align: center;
   margin: 0;
 }
 
@@ -402,22 +401,94 @@ table td {
   margin-top: 0px;
   margin-bottom: 30px;
   padding-top: 20px;
+  text-align: center;
   color: #000;
 }
 
-p.news-text {
-  color: #fff;
+#news li {
+  width: 90%;
 }
 
-.area05 {
+#news li img {
+  width: 30%;
+  height: 30%;
+  float: right;
+  margin: 30px;
+  padding-right: 40px;
+}
+
+#news li .news-contents {
+  float: left;
+  text-align: left;
+  margin: 10px;
+}
+
+#news li .headlinedate {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#news li .headlinetitle {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+#news p {
+  color: #000;
+  margin: 0;
+}
+
+.area04 {
   width: 100%;
+  height: 1000px;
+  z-index: 2;
+}
+
+#top04 {
+  height: 1000px;
+  background-image: url("../images/headphone.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.area04 h2 {
+  margin-top: 0;
+  padding: 30px 0 30px;
+  text-align: center;
+}
+
+/* ここからcontact*/
+.area05 {
+  background-color: #fff;
+  width: 100%;
+  height: 700px;
+  z-index: 2;
+}
+
+#contact {
+  margin-top: 79px;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
   background-image: url("../images/kansyumono.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5px;
+  z-index: 3;
 }
 
-/* ここからForm*/
+#contact h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+
 .form-group {
   width: 90%;
   text-align: center;
