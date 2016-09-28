@@ -235,7 +235,7 @@ p {
 #linkabout {
   height: 10px;
   margin-top: 79px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .area01 {
@@ -268,10 +268,15 @@ p {
   display: block;
 }
 
-.bx-viewport {
+#about .bx-viewport {
   background-color: #fff;
   color: #000;
   margin-top: -25px;
+  margin-bottom: 40px;
+}
+
+#about .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+  bottom: -40px;
 }
 
 .djs {
@@ -283,7 +288,7 @@ p {
   margin: 0 auto;
   float: left;
   padding: 10px 10px;
-  width: 55%;
+  width: 45%;
 }
 
 #profile {
@@ -293,9 +298,10 @@ p {
 }
 
 .profile_name {
+  font-family: 'Duru Sans', sans-serif;
   float: left;
   margin-left: 130px;
-  padding-top: 150px;
+  padding-top: 100px;
   text-align: center;
   color: #000;
   font-size: 3em;
@@ -317,12 +323,17 @@ p {
 .profile_english {
   float: left;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   text-align: left;
   color: #000;
 }
 
-/* ここからschejule*/
+/* ここからschedule*/
+#linkschedule {
+  position: relative;
+  top: -50px;
+}
+
 .area02 {
   width: 100%;
   height: 700px;
@@ -345,20 +356,55 @@ p {
   text-align: center;
 }
 
-#schejule .bx-viewport {
+#schedule .bx-viewport {
   background: transparent;
+  height: 600px;
   z-index: 1;
 }
 
 table {
-  padding: 0 100px 0 10px;
+  position: relative;
+  left: -20px;
+  width: 100%;
+  padding: 0 100px 0 0;
+  font-size: 1.2em;
 }
 
-#schejule .bx-wrapper {
+table tr {
+  height: 50px;
+}
+
+table td {
+  width: 33%;
+}
+
+#schedule .bx-wrapper {
   height: 600px;
 }
 
 /* ここからnews*/
+.area03 {
+  background-color: #fff;
+  width: 100%;
+  height: 700px;
+  z-index: 2;
+}
+
+#news {
+  margin-top: 79px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  margin: 0;
+}
+
+#news h2 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  color: #000;
+}
+
 p.news-text {
   color: #fff;
 }
