@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
     font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    // background-color: #fff;
+
     color: #ffffff;
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
@@ -39,20 +39,16 @@ header {
         width: 100%;
     ul {
     	padding-left: 0;
-        &:hover {
-            color: #000;
-        }
+
      li {
         list-style-type: none;
         display: inline-block;
         margin: 5px 30px;
-        &:hover {
-            color: #000;
-        }
+
         a {
             color: #000;
              &:hover {
-            color: red;
+            color: #bbb;
         }
         }
     }
@@ -221,10 +217,6 @@ a {
 
 /* ここからabout & Jquery*/
 
-// #about .bx-viewport {
-//     background:#fff;
-// }
-
 
 #linkabout {
          height:10px;
@@ -232,87 +224,96 @@ a {
         margin-bottom:42px;
 }
 .area01 {
-    position:absolute;
+    position:relative;
      width:100%;
+      height: auto;
     left:0;
     z-index:1;
 }
 
 
 #about {
+    height: auto;
     background-color: #fff;
     color:#000;
     text-align: center;
     margin: 0;
     // margin-top: 20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 
     // width: 90%;
 }
 #about h2{
     color: black;
-    font-weight:bold;
     margin: 0;
+        text-align: center;
 }
 .abouth2 {
-    margin-bottom:0px;
-    background-color: #fff;
-    height:60px;
-    text-align: center;
-    display: block;
+    margin-bottom:0;
+    // background-color: #fff;
+    // height:60px;
+
+    // display: block;
 }
 
 
 #about .bx-viewport {
+    width:auto;
+    height:auto;
     background-color: #fff;
     color:#000;
-    margin-top:-25px;
-    margin-bottom:40px;
+    // margin-top:-25px;
+    margin-bottom:6%;
 }
 
 #about .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-    bottom:-40px;
-}
-
-
-.djs {
-    margin-top: 0px;
-    padding: 0 10px;
-}
-
-.djs img {
-    margin: 0 auto;
-    float: left;
-    padding: 10px 10px;
-    width: 45%;
+    bottom:-7%;
 }
 
 
 #profile {
-    margin-top: -20px;
-    line-height: 3.5em;
-    vertical-align:middle;
+    margin-top: 0;
+    // line-height: 3.5em;
+    // padding-bottom:30%;
+  padding-top: 5%;
+  padding-left: 1%;
+  padding-right: 10%;
+  display:flex;
+  justify-content:space-between;
+}
+
+// .djs {
+//     margin-top: 0;
+//     padding: 0 0;
+// }
+
+.djs img {
+    // margin: 0 auto;
+    // float: left;
+    // padding: 0 0;
+    width: 55%;
+    height:55%;
 }
 
 .profile_name {
     font-family: 'Duru Sans', sans-serif;
-    float: left;
-    margin-left:130px;
-    padding-top: 100px;
+        font-size: 3em;
+    // float: left;
+    // margin-right:40%;
+    // padding-right: 10%;
     text-align: center;
     color: #000;
-    font-size: 3em;
 }
 
 .djs-text {
-    margin-top:0px;
+    margin-top:0;
     float: left;
 }
 .profile_japanese {
     float: left;
     text-align: left;
-    margin-top:5px;
+    // margin-top:5px;
     margin-bottom:0;
         color: #000;
 }
@@ -320,8 +321,8 @@ a {
 .profile_english {
     float: left;
     margin-top:0;
-    margin-bottom: 0px;
-     text-align: left;
+    margin-bottom: 0;
+    text-align: left;
          color: #000;
 }
 
@@ -335,12 +336,12 @@ top:-50px;
 
 .area02 {
     width: 100%;
-    height: 700px;
+ height:auto;
     z-index: 2;
 }
 
 #top02 {
-    height: 700px;
+    height: auto;
     background-image:url("../images/djtablemono.jpg");
     background-size: cover;
     background-attachment:fixed;
@@ -350,24 +351,24 @@ top:-50px;
 }
 .area02 h2 {
     margin-top: 0;
-    padding: 30px 0 30px;
+    padding: 5% 0 5%;
     text-align: center;
 }
 
 #schedule .bx-viewport {
     background:transparent;
-        height: 600px;
+           height:auto;
+
     z-index:1;
 }
 
 table {
     position:relative;
-    left:-20px;
     width:100%;
     padding: 0 100px 0 0;
     font-size:1.2em;
     tr {
-    height:50px;
+    height:20%;
 }
   td {
     width:33%;
@@ -376,17 +377,8 @@ table {
 
 #schedule .bx-wrapper {
     height: 600px;
-    // & .tables {
-    //     height:100%;
-    // }
-}
-// .thead {
-//     vertical-align:baseline;
-// }
 
-  // /#schedule .bx-wrapper .tables {
-  //       height:100%;
-  //   }
+}
 
 
 
@@ -395,21 +387,19 @@ table {
 .area03 {
     background-color: #fff;
     width: 100%;
-    height: 700px;
+        height:auto;
+
     z-index: 2;
 }
-
-//
 
 
 #news {
     margin-top: 79px;
+        height:auto;
+
     background-color: #fff;
-    // background-image: url("../images/demo14.jpg");
-    // position:scroll;
     color:#000;
     margin: 0;
-    // width: 90%;
 }
 
 #news h2 {
@@ -417,7 +407,6 @@ table {
     margin-bottom:30px;
     padding-top:20px;
         text-align: center;
-
   color:#000;
 }
 #news li {
@@ -449,29 +438,7 @@ table {
     color:#000;
     margin:0;
 }
-// #wrapper {
-//     display: -webkit-flex;
-//     display: -moz-flex;
-//     display: -ms-flex;
-//     display: -o-flex;
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     align-content: flex-start;
-//     flex-basis: 300px;
-// }
 
-//     img {
-//         float: right;
-//     }
-//     .news-contents{
-//             text-align:left;
-// float: left;
-// }
-// .news-headlinedate {
-
-// }
-// }
 
 /* ここからmusic*/
 
@@ -491,7 +458,8 @@ table {
     padding-bottom: 5%;
     z-index: 1;
 }
-.area04 h2 {
+#music h2 {
+        font-size: 2em;
     margin-top: 0;
     padding: 30px 0 30px;
     text-align: center;
@@ -528,7 +496,6 @@ iframe {
 
 #contact {
     margin-top: 79px;
-    // background-color: #fff;
     color:#000;
     height: auto;
     margin: 0;
@@ -540,15 +507,17 @@ iframe {
 }
 
 #contact h2 {
+    font-size: 2em;
     margin-top:0px;
     margin-bottom:3%;
-    padding-top:20px;
+    padding-top:3%;
     padding-bottom: 3%;
         text-align: center;
         background-color: #fff;
   color:#000;
 }
 .form-group {
+    color:#fff;
     width: 80%;
     text-align: center;
     margin: 0 auto;
@@ -561,15 +530,21 @@ iframe {
 }
 
 input[type="name"] {
+    color:#fff;
+    font-size: 1.2em;
+        height:2em;
     margin-top: 10%;
-    height:3em;
+
 }
 
 input[type="email"] {
-    height:3em;
+       color:#fff;
+    font-size: 1.2em;
+        height:2em;
 }
 textarea {
-
+        color:#fff;
+    font-size: 1.2em;
 }
 button {
     background-color: #bbbbbb;
@@ -604,33 +579,3 @@ footer img {
     width: 10%;
     height:10%;
 }
-
-// table {
-//     border: 0;
-//     width: 100%;
-// }
-
-// th {
-//     border: 0;
-// }
-
-// thead {
-//     font-weight: bold;
-//     color: #fff;
-//     background: rgba(0, 0, 0, 0.5);
-//     width: 100%;
-//     .date {
-//         width: 20%;
-//     }
-//     .event {
-//         width: 40%;
-//     }
-//     .venue {
-//         width: 40%;
-//     }
-// }
-
-// td {
-//     color: #fff;
-//     text-align: center;
-// }
