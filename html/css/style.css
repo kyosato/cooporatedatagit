@@ -45,7 +45,7 @@ header ul {
 header ul li {
   list-style-type: none;
   display: inline-block;
-  margin: 5px 30px;
+  margin: 5px 2.94%;
 }
 
 header ul li a {
@@ -72,15 +72,18 @@ header ul li a:hover {
   z-index: -3;
 }
 
-/*
-#social-icons-top .social-header ul li {
-}*/
+@media screen and (max-width: 980px) {
+  #top {
+    max-width: 980px;
+  }
+}
+
 h1 {
   display: block;
   font-family: 'Megrim', cursive;
   color: white;
-  font-size: 100px;
-  margin-top: 300px;
+  font-size: 6.1em;
+  margin-top: 29%;
   margin-bottom: 0;
   position: scroll;
   width: 100%;
@@ -95,13 +98,13 @@ h2 {
   font-size: 2em;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #ffffff;
 }
 
-a:hover {
-  color: #666666;
+header a:hover {
+  color: #666;
 }
 
 #about p {
@@ -132,7 +135,7 @@ a:hover {
 }
 
 .social-header ul li:hover {
-  border: red solid 1px;
+  border: #bbb solid 1px;
 }
 
 .facebook-header,
@@ -145,14 +148,6 @@ a:hover {
   background-repeat: no-repeat;
   border: #fff solid 1px;
   border-radius: 3px;
-}
-
-.facebook-header :hover {
-  width: 32px;
-  height: 32px;
-  background-image: url("../images/icon2/twitter.png");
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 .scroll {
@@ -236,6 +231,11 @@ a:hover {
   height: auto;
   left: 0;
   z-index: 1;
+  background-color: #fff;
+}
+
+#about .bxslider {
+  width: 100%;
 }
 
 #about {
@@ -254,10 +254,6 @@ a:hover {
   text-align: center;
 }
 
-.abouth2 {
-  margin-bottom: 0;
-}
-
 #about .bx-viewport {
   width: auto;
   height: auto;
@@ -272,11 +268,46 @@ a:hover {
 
 #profile {
   margin-top: 0;
-  padding-top: 5%;
+  padding-top: 1%;
   padding-left: 1%;
   padding-right: 10%;
   display: flex;
   justify-content: space-between;
+}
+
+.profile_right {
+  width: 100%;
+  height: 100%;
+}
+
+.profile_right ul {
+  text-align: center;
+  line-height: 1.5em;
+  margin-top: 25%;
+  padding-right: 10%;
+}
+
+.profile_right ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 3px;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.profile_right ul li:hover {
+  border: #666 solid 1px;
+}
+
+.profile_right ul li img {
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+}
+
+.profile_right .facebook-header, .profile_right .twitter-header, .profile_right .mixcloud-header {
+  border: #000 solid 1px;
+  border-radius: 3px;
 }
 
 .djs img {
@@ -284,9 +315,10 @@ a:hover {
   height: 55%;
 }
 
-.profile_name {
+.djs h4 {
   font-family: 'Duru Sans', sans-serif;
   font-size: 3em;
+  margin: 0;
   text-align: center;
   color: #000;
 }
@@ -333,26 +365,36 @@ a:hover {
   z-index: 1;
 }
 
-.area02 h2 {
+#schedule h2 {
   margin-top: 0;
   padding: 5% 0 5%;
   text-align: center;
 }
 
+#schedule .bx-wrapper {
+  height: auto;
+}
+
 #schedule .bx-viewport {
+  overflow: visible !important;
   background: transparent;
   height: auto;
-  z-index: 1;
+  padding-bottom: 1%;
+}
+
+li .tables {
+  text-align: center;
+  padding-bottom: 3%;
 }
 
 table {
-  position: relative;
   width: 100%;
-  padding: 0 100px 0 0;
+  padding: 0 10% 0 0;
   font-size: 1.2em;
 }
 
 table tr {
+  text-align: center;
   height: 20%;
 }
 
@@ -360,8 +402,24 @@ table td {
   width: 33%;
 }
 
-#schedule .bx-wrapper {
-  height: 600px;
+#schedule p {
+  text-align: center;
+  background-color: rgba(0, 0, 30, 0.3);
+  padding: 1%;
+  border: 1px solid #fff;
+}
+
+.futuretable {
+  margin-top: 0;
+}
+
+#schedule a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#schedule a:hover {
+  color: #666;
 }
 
 /* ここからnews*/
