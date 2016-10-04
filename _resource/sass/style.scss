@@ -10,9 +10,7 @@ body {
 }
 
 @media (min-width: 600px)  {
-    body {
-        width:100%;
-    }
+
 a {
     text-decoration:none;
     padding-bottom:1px;
@@ -45,7 +43,6 @@ header .nav {
         }
     }
 }
-
 }
 
 @media only screen and (max-width: 599px) {
@@ -112,7 +109,6 @@ a {
         top:150px;
     }
     #schedule {
-        // padding-bottom: 0%;
         h2 {
             font-size: 1.5em;
         }
@@ -128,7 +124,7 @@ a {
     }
 
     #news {
-                        position:relative;
+         position:relative;
         top:150px;
         h2 {
             font-size: 1.5em;
@@ -148,20 +144,15 @@ a {
         .headlinetitle {
             font-size: 0.8em;
         }
-        // .textArea {
-        //     padding:0 1.5%;
-        // }
         .news-japanese,
         .news-english {
             line-height: 1.6em;
         }
     }
     #music {
-        //                 position:relative;
-        // top:150px;
+
         .video,
         .audio {
-            // flex-direction:column;
             display: block;
             margin: 0 auto;
         }
@@ -218,15 +209,20 @@ a {
     }
     footer {
         display:none;
-        // ul {
-        //     flex-wrap: wrap;
-        // }
-        // .linkimg {
-        //     // .order1 {
-        //     //     order: 4;
-        //     // }
-        // }
     }
+    #linkabout {
+position:relative;
+top:200px;
+}
+
+
+    #linkschedule{
+top:150px;
+    }
+
+     #linkmusic,#linkcontact{
+
+     }
 }
 
 @keyframes fadeIn {
@@ -478,7 +474,7 @@ h2 {
     color: #000;
     text-align: center;
     margin: 0;
-    padding-top: 2%;
+    padding-top: 0%;
     padding-bottom: 2%;
 }
 
@@ -516,6 +512,7 @@ h2 {
 #about h2 {
     color: #000;
     margin: 0;
+    padding-top: 2%;
     text-align: center;
 }
 
@@ -523,10 +520,13 @@ h2 {
     color: #000;
     padding: 0;
 }
+#about li {
+    margin-right: 0;
+}
 
 #profile {
     margin-top: 0;
-    padding-left: 5%;
+    padding-left: 7%;
     display: flex;
     justify-content: space-between;
 }
@@ -582,9 +582,9 @@ h2 {
 
 .djs-text {
     padding-top: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
 }
 
 .profile_japanese {
@@ -606,7 +606,11 @@ h2 {
     position: relative;
     top: -50px;
 }
-
+@media only screen and (max-width: 599px) {
+    #linkschedule{
+        top:150px;
+    }
+}
 .area02 {
     width: 100%;
     height: auto;
@@ -637,7 +641,9 @@ h2 {
     padding: 2% 0 0;
     text-align: center;
 }
-
+#schedule li {
+    margin-right: 0;
+}
 
 /* ここからbxslider*/
 
@@ -740,6 +746,11 @@ table {
     position: relative;
     top: -47px;
 }
+@media only screen and (max-width: 599px) {
+    #linknews{
+    top:153px;
+}
+}
 
 .area03 {
     background-color: #fff;
@@ -831,6 +842,11 @@ table {
     top: -40px;
 }
 
+@media only screen and (max-width: 599px) {
+    #linkmusic{
+    top:153px;
+}
+}
 .area04 {
     width: 100%;
     height: auto;
@@ -900,6 +916,11 @@ iframe {
     position: relative;
     top: -45px;
 }
+@media only screen and (max-width: 599px) {
+    #linkcontact{
+    top:30px;
+}
+}
 
 .area05 {
     background-color: #fff;
@@ -910,6 +931,7 @@ iframe {
 }
 
 #contact {
+
     color: #000;
     height: 100%;
     margin: 0;
@@ -918,6 +940,9 @@ iframe {
     background-size: cover;
     z-index: 3;
     padding-bottom: 0%;
+    p {
+            font-family: 'Duru Sans', sans-serif;
+    }
 }
 
 #contact h2 {
@@ -966,8 +991,9 @@ input[type="email"] {
 
 #contact textarea {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.1em;
     // margin-bottom:0;
+    font-family: 'Duru Sans', sans-serif;
     border: 2px solid #666;
 }
 
