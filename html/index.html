@@ -16,9 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Duru+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Ek+Mukta:800" rel="stylesheet"> -->
     <!-- jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="bxslider/jquery.bxslider.min.js"></script>
     <link href="bxslider/jquery.bxslider.css" rel="stylesheet">
     <script type="text/javascript">
@@ -32,21 +31,52 @@
         });
     });
     </script>
+    <script>
+    $(function() {
+        $(".openBtn").click(function() {
+            $($(this).next(".textArea")).animate({
+                    height: "toggle",
+                    opacity: "toggle"
+                },
+                "nomal"
+            );
+        });
+    });
+    </script>
 </head>
 
 <body id="home">
-    <header id="global-nav">
-        <nav>
+    <header id="header">
+        <div class="header__bg">
+            <div class="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+        <nav class="nav">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#linkabout">ABOUT</a></li>
                 <li><a href="#linkschedule">SCHEDULE</a></li>
                 <li><a href="#linknews">NEWS</a></li>
-                <li><a href="#video">MUSIC</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#linkmusic">MUSIC</a></li>
+                <li><a href="#linkcontact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
+            <script>
+        (function($) {
+            $(function() {
+                var $header = $('#header');
+
+                $('.toggle').click(function(){
+                    $header.toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+
     <div id="top"></div>
     <div id="logo">
         <h1>[ c l a s i q ]</h1></div>
@@ -54,17 +84,17 @@
         <div class="social-header">
             <ul>
                 <li class="facebook-header">
-                    <a href="https://www.facebook.com" target="_blank"><img src="images/icon2/facebookwhite.png" onmouseover="this.src='images/icon2/facebook.png'" onmouseout="this.src='images/icon2/facebookwhite.png'" height="32" width="32" alt="facebook"></a>
+                    <a href="https://www.facebook.com/tokyohousecollective/" target="_blank"><img src="images/icon2/facebookwhite.png" onmouseover="this.src='images/icon2/facebook.png'" onmouseout="this.src='images/icon2/facebookwhite.png'" height="32" width="32" alt="facebook"></a>
                 </li>
                 <li class="twitter-header">
-                    <a href="https://twitter.com/" target="_blank"> <img src="images/icon2/twitterwhite.png" onmouseover="this.src='images/icon2/twitter.png'" onmouseout="this.src='images/icon2/twitterwhite.png'" height="32" width="32" alt="twitter"></a>
+                    <a href="https://twitter.com/houseintokyo" target="_blank"> <img src="images/icon2/twitterwhite.png" onmouseover="this.src='images/icon2/twitter.png'" onmouseout="this.src='images/icon2/twitterwhite.png'" height="32" width="32" alt="twitter"></a>
                 </li>
                 <li class="instagram-header">
-                    <a href="http://instagram.com/" target="_blank"><img src="images/icon2/instagramwhite.png" onmouseover="this.src='images/icon2/instagram.png'" onmouseout="this.src='images/icon2/instagramwhite.png'" height="32" width="32" alt="instagram">
+                    <a href="https://www.instagram.com/silverfox47/" target="_blank"><img src="images/icon2/instagramwhite.png" onmouseover="this.src='images/icon2/instagram.png'" onmouseout="this.src='images/icon2/instagramwhite.png'" height="32" width="32" alt="instagram">
                     </a>
                 </li>
                 <li class="mixcloud-header">
-                    <a href="http://mixcloud.com/" target="_blank"><img src="images/icon2/mixcloudwhite.png" onmouseover="this.src='images/icon2/mixcloud.png'" onmouseout="this.src='images/icon2/mixcloudwhite.png'" height="32" width="32" alt="mixcloud"></a>
+                    <a href="https://www.mixcloud.com/Silverfox48/" target="_blank"><img src="images/icon2/mixcloudwhite.png" onmouseover="this.src='images/icon2/mixcloud.png'" onmouseout="this.src='images/icon2/mixcloudwhite.png'" height="32" width="32" alt="mixcloud"></a>
                 </li>
                 <li class="youtube-header">
                     <a href="http://www.youtube.com/" target="_blank"><img src="images/icon2/youtubewhite.png" onmouseover="this.src='images/icon2/youtube.png'" onmouseout="this.src='images/icon2/youtubewhite.png'" height="32" width="32" alt="youtube">
@@ -84,7 +114,6 @@
                 <li class="djs">
                     <div id="profile">
                         <img class="flex-item" src="images/djs/94.jpg" alt="" class="image1">
-
                         <div class="profile_right">
                             <ul>
                                 <h4 class="profile_name">DJ Silverfox</h4>
@@ -92,20 +121,21 @@
                                 <span class="profileicon">
 
                                 <li class="facebook-header">
-                                    <a href="https://www.facebook.com" target="_blank"><img src="images/icon2/facebookblack.png" onmouseover="this.src='images/icon2/facebook666.png'" onmouseout="this.src='images/icon2/facebookblack.png'" height="32" width="32" alt="facebook"></a>
-                                </li>
-                                <li class="twitter-header">
-                                    <a href="https://twitter.com/" target="_blank"> <img src="images/icon2/twitterblack.png" onmouseover="this.src='images/icon2/twitter666.png'" onmouseout="this.src='images/icon2/twitterblack.png'" height="32" width="32" alt="twitter"></a>
+                                    <a href="https://www.facebook.com/Silverfox47/" target="_blank"><img src="images/icon2/facebook666.png" onmouseover="this.src='images/icon2/facebookblack.png'" onmouseout="this.src='images/icon2/facebook666.png'" height="32" width="32" alt="facebook"></a>
                                 </li>
                                 <li class="mixcloud-header">
-                                    <a href="http://mixcloud.com/" target="_blank"><img src="images/icon2/mixcloudblack.png" onmouseover="this.src='images/icon2/mixcloud666.png'" onmouseout="this.src='images/icon2/mixcloudblack.png'" height="32" width="32" alt="mixcloud"></a>
+                                    <a href="https://www.mixcloud.com/Silverfox48/" target="_blank"><img src="images/icon2/mixcloud666.png" onmouseover="this.src='images/icon2/mixcloudblack.png'" onmouseout="this.src='images/icon2/mixcloud666.png'" height="32" width="32" alt="mixcloud"></a>
+                                </li>
+                                <li class="instagram-header">
+                                                 <a href="https://www.instagram.com/silverfox47/" target="_blank"><img src="images/icon2/instagram666.png" onmouseover="this.src='images/icon2/instagramblack.png'" onmouseout="this.src='images/icon2/instagram666.png'"  height="32" width="32" alt="instagram">
+                    </a>
                                 </li>
                                 </span>
                             </ul>
                         </div>
                     </div>
                     <div class=djs-text>
-                        <p class="profile_japanese"> DJ Silverfoxは、20年以上にわたりDJの広範なネットワークに名を広げた、もはや紛れもないTOKYOナンバーワンのafter hours アンダーグラウンドDJである。 彼の音楽への情熱とスキルは人々を魅了し、ハウスミュージック界の伝説となり、現在は東京にとどまらず世界中にTOKYOアンダーグラウンドサウンドを 広げている。
+                        <p class="profile_japanese"> DJ Silverfoxは、20年以上にわたりDJの広範なネットワークに名を広げた、もはや紛れもないTOKYOナンバーワンのafter hours アンダーグラウンドDJである。 彼の音楽への情熱とスキルは人々を魅了し、ハウスミュージック界の伝説となり、現在は東京にとどまらず世界中にTOKYOアンダーグラウンドサウンドを広げている。
                         </p>
                         <p class="profile_english">DJ Silverfox has been involved in the music and nightlife industry for over twenty years. From London, to Ibiza, Tokyo, he has developed deep relationship with music and entertainment. He has a true passion for music and it shows through every time he is behind the decks. He is unquestionably the top after-house DK in the Roppongi area of Tokyo. In 2008, after years of ruling the after-hours party scene, DJ Silverfox reached into his extensive network of Dj’s and established BeatForce to spread the Tokyo underground sound around the world.</p>
                     </div>
@@ -113,19 +143,19 @@
                 <li class="djs">
                     <div id="profile">
                         <img src="images/djs/101.jpg" alt="" class="image2">
-                                          <div class="profile_right">
+                        <div class="profile_right">
                             <ul>
                                 <h4 class="profile_name">DJ Rui</h4>
                                 <br>
                                 <span class="profileicon">
-                                <li class="facebook-header">
-                                    <a href="https://www.facebook.com" target="_blank"><img src="images/icon2/facebookblack.png" onmouseover="this.src='images/icon2/facebook666.png'" onmouseout="this.src='images/icon2/facebookblack.png'" height="32" width="32" alt="facebook"></a>
+                                 <li class="facebook-header">
+                                    <a href="https://www.facebook.com" target="_blank"><img src="images/icon2/facebook666.png" onmouseover="this.src='images/icon2/facebookblack.png'" onmouseout="this.src='images/icon2/facebook666.png'" height="32" width="32" alt="facebook"></a>
                                 </li>
                                 <li class="twitter-header">
-                                    <a href="https://twitter.com/" target="_blank"> <img src="images/icon2/twitterblack.png" onmouseover="this.src='images/icon2/twitter666.png'" onmouseout="this.src='images/icon2/twitterblack.png'" height="32" width="32" alt="twitter"></a>
+                                    <a href="https://twitter.com/" target="_blank"> <img src="images/icon2/twitter666.png" onmouseover="this.src='images/icon2/twitterblack.png'" onmouseout="this.src='images/icon2/twitter666.png'" height="32" width="32" alt="twitter"></a>
                                 </li>
                                 <li class="mixcloud-header">
-                                    <a href="http://mixcloud.com/" target="_blank"><img src="images/icon2/mixcloudblack.png" onmouseover="this.src='images/icon2/mixcloud666.png'" onmouseout="this.src='images/icon2/mixcloudblack.png'" height="32" width="32" alt="mixcloud"></a>
+                                    <a href="http://mixcloud.com/" target="_blank"><img src="images/icon2/mixcloud666.png" onmouseover="this.src='images/icon2/mixcloudblack.png'" onmouseout="this.src='images/icon2/mixcloud666.png'" height="32" width="32" alt="mixcloud"></a>
                                 </li>
                                 </span>
                             </ul>
@@ -140,19 +170,19 @@
                 <li class="djs">
                     <div id="profile">
                         <img src="images/djs/69.jpg" alt="" class="image3">
-                                                              <div class="profile_right">
+                        <div class="profile_right">
                             <ul>
                                 <h4 class="profile_name">DJ Emil</h4>
                                 <br>
                                 <span class="profileicon">
                                <li class="facebook-header">
-                                    <a href="https://www.facebook.com" target="_blank"><img src="images/icon2/facebookblack.png" onmouseover="this.src='images/icon2/facebook666.png'" onmouseout="this.src='images/icon2/facebookblack.png'" height="32" width="32" alt="facebook"></a>
+                                    <a href="https://www.facebook.com" target="_blank"><img src="images/icon2/facebook666.png" onmouseover="this.src='images/icon2/facebookblack.png'" onmouseout="this.src='images/icon2/facebook666.png'" height="32" width="32" alt="facebook"></a>
                                 </li>
                                 <li class="twitter-header">
-                                    <a href="https://twitter.com/" target="_blank"> <img src="images/icon2/twitterblack.png" onmouseover="this.src='images/icon2/twitter666.png'" onmouseout="this.src='images/icon2/twitterblack.png'" height="32" width="32" alt="twitter"></a>
+                                    <a href="https://twitter.com/" target="_blank"> <img src="images/icon2/twitter666.png" onmouseover="this.src='images/icon2/twitterblack.png'" onmouseout="this.src='images/icon2/twitter666.png'" height="32" width="32" alt="twitter"></a>
                                 </li>
                                 <li class="mixcloud-header">
-                                    <a href="http://mixcloud.com/" target="_blank"><img src="images/icon2/mixcloudblack.png" onmouseover="this.src='images/icon2/mixcloud666.png'" onmouseout="this.src='images/icon2/mixcloudblack.png'" height="32" width="32" alt="mixcloud"></a>
+                                    <a href="http://mixcloud.com/" target="_blank"><img src="images/icon2/mixcloud666.png" onmouseover="this.src='images/icon2/mixcloudblack.png'" onmouseout="this.src='images/icon2/mixcloud666.png'" height="32" width="32" alt="mixcloud"></a>
                                 </li>
                                 </span>
                             </ul>
@@ -164,22 +194,22 @@
                         <p class="profile_english">DJ Emil has been involved in the music and nightlife industry for over twenty years. From London, to Ibiza, Tokyo, he has developed deep relationship with music and entertainment. He has a true passion for music and it shows through every time he is behind the decks. He is unquestionably the top after-house DK in the Roppongi area of Tokyo. In 2008, after years of ruling the after-hours party scene, DJ Silverfox reached into his extensive network of Dj’s and established BeatForce to spread the Tokyo underground sound around the world.</p>
                     </div>
                 </li>
-                                <li class="djs">
+                <li class="djs">
                     <div id="profile">
                         <img src="images/djs/99.jpg" alt="" class="image4">
-                                                              <div class="profile_right">
+                        <div class="profile_right">
                             <ul>
-                            <h4 class="profile_name">DJ Deep<span class="omega">Ω</span> d</h4>
+                                <h4 class="profile_name">DJ Deep<span class="omega">Ω</span> d</h4>
                                 <br>
                                 <span class="profileicon">
-                               <li class="facebook-header">
-                                    <a href="https://www.facebook.com" target="_blank"><img src="images/icon2/facebookblack.png" onmouseover="this.src='images/icon2/facebook666.png'" onmouseout="this.src='images/icon2/facebookblack.png'" height="32" width="32" alt="facebook"></a>
+                              <li class="facebook-header">
+                                    <a href="https://www.facebook.com" target="_blank"><img src="images/icon2/facebook666.png" onmouseover="this.src='images/icon2/facebookblack.png'" onmouseout="this.src='images/icon2/facebook666.png'" height="32" width="32" alt="facebook"></a>
                                 </li>
                                 <li class="twitter-header">
-                                    <a href="https://twitter.com/" target="_blank"> <img src="images/icon2/twitterblack.png" onmouseover="this.src='images/icon2/twitter666.png'" onmouseout="this.src='images/icon2/twitterblack.png'" height="32" width="32" alt="twitter"></a>
+                                    <a href="https://twitter.com/" target="_blank"> <img src="images/icon2/twitter666.png" onmouseover="this.src='images/icon2/twitterblack.png'" onmouseout="this.src='images/icon2/twitter666.png'" height="32" width="32" alt="twitter"></a>
                                 </li>
                                 <li class="mixcloud-header">
-                                    <a href="http://mixcloud.com/" target="_blank"><img src="images/icon2/mixcloudblack.png" onmouseover="this.src='images/icon2/mixcloud666.png'" onmouseout="this.src='images/icon2/mixcloudblack.png'" height="32" width="32" alt="mixcloud"></a>
+                                    <a href="http://mixcloud.com/" target="_blank"><img src="images/icon2/mixcloud666.png" onmouseover="this.src='images/icon2/mixcloudblack.png'" onmouseout="this.src='images/icon2/mixcloud666.png'" height="32" width="32" alt="mixcloud"></a>
                                 </li>
                                 </span>
                             </ul>
@@ -194,109 +224,108 @@
             </ul>
         </section>
     </div>
-
     <div id="linkschedule"></div>
-
-
-
     <div class="area02">
         <div id="top02">
             <section id="schedule">
                 <h2 class="schedule">SCHEDULE</h2>
-                 <p class="futuretable">UPCOMING</p>
                 <ul class="bxslider">
                     <li class="tables">
-                        <table style="background:transparent">
-
-                 <!--            <thead style="background:transparent"> -->
-                                <!--        <p class="futuretable">future</p> -->
-                                <tr>
-                                    <td class="date">DATE</td>
-                                    <td class="event">EVENT</td>
-                                    <td class="venue">VENUE</td>
-                                </tr>
-
+                        <table>
+                            <div class="tabletitle">
+                                <p class="futuretable">UPCOMING</p>
+                            </div>
                             <tbody>
                                 <tr>
-                                    <td>2016/09/24</td>
-                                    <td>Tokyo House Nation: Cesar's Birthday Bash</td>
-                                    <td><a href="javascript:window.open('http://www.flow-festival.at');">The Firsthouse Roppongi</a></td>
+                                    <td class="date">2016/10/01</td>
+                                    <td class="event"><a href="https://www.facebook.com/Silverfox47/photos/a.149264744761.141020.131545544761/10155445629944762/?type=3&theater" target="_blank">After hours with Resident DJ Renzo</a></td>
+                                    <td class="venue"><a href="javascript:window.open('https://www.google.co.jp/maps/place/ODEON+TOKYO/@35.662381,139.733048,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b9cf745a3fb:0x97201f895a0f41b5!8m2!3d35.662381!4d139.7352367');">Odeon Tokyo</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2016/07/29</td>
-                                    <td>House Classique</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557');">Wallflowers</a></td>
+                                    <td class="date">2016/10/15</td>
+                                    <td class="event">Weekend Birthday Celebration</td>
+                                    <td class="venue"><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers BAR</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2016/07/15</td>
-                                    <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td class="date">2016/10/22</td>
+                                    <td class="event">NY House Collection</td>
+                                    <td class="venue"><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers BAR</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2016/07/10</td>
-                                    <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td class="date">2016/10/29</td>
+                                    <td class="event">Bring the house feeling back</td>
+                                    <td class="venue"><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers BAR</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2016/07/07</td>
-                                    <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td class="date">2016/11/05</td>
+                                    <td class="event">Dj Silverfox special</td>
+                                    <td class="venue"><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers BAR</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2016/07/01</td>
-                                    <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td class="date">2016/11/12</td>
+                                    <td class="event">Weekend Birthday Celebration</td>
+                                    <td class="venue"><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers BAR</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2016/06/31</td>
-                                    <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td class="date">2016/11/19</td>
+                                    <td class="event">Monthly Birthday Celebration</td>
+                                    <td class="venue"><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers BAR</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2016/06/15</td>
-                                    <td>8kome Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td class="date">2016/11/26</td>
+                                    <td class="event">Tokyo House Nation</td>
+                                    <td class="venue"><a href="javascript:window.open('https://www.google.co.jp/maps/place/The+First+House/@35.6619787,139.730787,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b9d6c2f684d:0x4f35a492f150ef11!8m2!3d35.6619787!4d139.7329757');">The Firsthouse Roppongi</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </li>
                     <li class="tables">
                         <table>
-                            <thead>
-                                <td class="date">DATE</td>
-                                <td class="event">EVENT</td>
-                                <td class="venue">VENUE</td>
-                            </thead>
+                            <div class="tabletitle">
+                                <p class="pasttable">PAST</p>
+                            </div>
                             <tbody>
                                 <tr>
                                     <td>2016/09/24</td>
-                                    <td>Tokyo House Nation: Cesar's Birthday Bash</td>
-                                    <td><a href="javascript:window.open('http://www.flow-festival.at');">The Firsthouse Roppongi</a></td>
+                                    <td>Tokyo House Nation Cesar's Birthday Bash</td>
+                                    <td>The Firsthouse Roppongi</td>
                                 </tr>
                                 <tr>
                                     <td>2016/07/29</td>
                                     <td>House Classique</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557');">Wallflowers</a></td>
+                                    <td>Wallflowers BAR</td>
                                 </tr>
                                 <tr>
                                     <td>2016/07/15</td>
                                     <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td>Wallflowers BAR</td>
                                 </tr>
                                 <tr>
-                                    <td>2016/07/15</td>
-                                    <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td>2016/05/06</td>
+                                    <td>TAKING YOU BACK 2 THE OLD SKOOL</td>
+                                    <td>Wallflowers BAR</td>
                                 </tr>
                                 <tr>
-                                    <td>2016/07/15</td>
-                                    <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td>2016/04/01</td>
+                                    <td>CHERRY BLOSSOM SESSIONS</td>
+                                    <td>Wallflowers BAR</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>2016/07/15</td>
-                                    <td>Weekend Birthday Celebration</td>
-                                    <td><a href="javascript:window.open('https://www.google.co.jp/maps/place/Wallflowers+BAR/@35.6585515,139.7213411,17z/data=!4m5!3m4!1s0x0:0x533b8e233693709c!8m2!3d35.658192!4d139.723557https://www.facebook.com/events/1045921708795678/');">Wallflowers</a></td>
+                                    <td>2016/03/05</td>
+                                    <td>TOKYO HOUSE Collective Session 9</td>
+                                    <td>Wallflowers BAR</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2016/02/20</td>
+                                    <td>TOKYO HOUSE Collective Session 8</td>
+                                    <td>Wallflowers BAR</td>
+                                </tr>
+                                <tr>
+                                    <td>2016/01/23</td>
+                                    <td>TOKYO HOUSE Collective Session 7</td>
+                                    <td>Wallflowers BAR</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -309,87 +338,148 @@
     <div class="area03">
         <section id="news">
             <h2 class="newsh2">NEWS</h2>
-            <ul class="bxslider">
-                <li class="newses">
-                    <!--    <section id="wrapper"> -->
-                    <p> <img src="images/tokyohousenation.jpg" alt="tokyohousenation"></p>
-                    <p class="news-contents ">
-                        <p class="headlinedate">2016.09.24</p>
-                        <p class="headlinetitle">Tokyo House Nation: Cesar's Birthday Bash</p>
-                        <p class="news-japanese">
-                            The First House Bar Roppongiにて、Tokyo House NationがCesarの birthday partyを主催します。 私たちと一緒に最高の音楽がかかるCesarの誕生日パーティーを楽しみましょう。 DATE：9月24日/AM0～AM6 Entrance：1500円/1drink ※Flyerをお持ちのお客様は500円ディスカウントされます。
-                        </p>
-                        <p class="news-english"></p>
-                        This night comes but once a year, so let’s do it right for Cesar! Come out and celebrate his birthday down at The First House Bar. It will be an event filled with the sounds of House (Electro and New York), Garage and a mixture of other styles for one and all to enjoy.
-                        <p class="news-info">
-                            [Djs] DJ Silverfox DJ K Walter DJ Emile DJ Yuichi a.k.a DeepΩd [ジャンル] NY House, Electro, Tech House, All Mix The First House Roppongi Bar presents Tokyo House Nation. From 12 to 6am - NY House, Electro, Tech House and All Mix. This is Cesar's Birthday Party, so join us for the best night you can have! Entrance 1,000 \ Plus one Drink with Flyer 1,500 \ Plus one Drink with out Flyer
-                        </p>
-                    </p>
-                    <!--                   </section> -->
-                </li>
-                <li class="newses">
-                    <div class="news-contents" id="wrapper">
-                        <img src="images/tokyohousenation.jpg" alt="tokyohousenation">
-                        <p class="news-text">
-                            <p class="headlinedate">5月6日 </p>
-                            <p class="headlinetitle">TOKYO HOUSE COLLECTIVE: Wallflowers Bar TOMORROW NIGHT "TAKING YOU BACK 2 THE OLD SKOOL" Tokyo House Collective Back 2 The Old Skool House Sessions Wallflowers Bar</p>
+            <div class="news-contents">
+                <div class="contents-title">
+                    <div class="text-contents">
+                        <div class="openBtn"><i class="fa fa-chevron-down faColor"></i>
+                            <span class="headlinedate">2016.09.24</span>
+                            <br>
+                            <span class="headlinetitle">Tokyo House Nation: Cesar's Birthday Bash</span>
+                        </div>
+                        <div class="textArea">
+                            <p class="news-japanese">
+                                The First House Bar Roppongiにて、Tokyo House NationがCesarの birthday partyを主催します。 私たちと一緒に最高の音楽がかかるCesarの誕生日パーティーを楽しみましょう。
+                                <br>※Flyerをお持ちのお客様は500円ディスカウントされます。
+                            </p>
+                            <p class="news-english">
+                                This night comes but once a year, so let’s do it right for Cesar! Come out and celebrate his birthday down at The First House Bar. It will be an event filled with the sounds of House (Electro and New York), Garage and a mixture of other styles for one and all to enjoy.
+                                <br>From 12 to 6am - NY House, Electro, Tech House and All Mix. This is Cesar's Birthday Party, so join us for the best night you can have! Entrance 1,000 \ Plus one Drink with Flyer 1,500 \ Plus one Drink with out Flyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents-title">
+                    <div class="text-contents">
+                        <div class="openBtn"><i class="fa fa-chevron-down faColor"></i>
+                            <span class="headlinedate">2016.05.06</span>
+                            <br>
+                            <span class="headlinetitle">"TAKING YOU BACK 2 THE OLD SKOOL" <br>Tokyo House Collective Back 2 The Old Skool House Sessions Wallflowers Bar</span>
+                        </div>
+                        <div class="textArea">
                             <p class="news-japanese">
                                 Tokyo House CollectiveがスタイリッシュなWallflowers Barで開催する Back 2 The Old Skool House Sessions 新のハウス音楽を聴きながら、パーティーの雰囲気をじっくりお楽しみいただけます。 Tokyo House CollectiveのレジデントDJたちがあなたを躍らせます。参加者全員で桜のシーズンを思い切り楽しみましょう。お見逃しなく！ Facebookのイベントで「参加する」を押すと入場料が1000円（1ドリンク付き）となります。皆様のご参加をお待ちしております！ Tokyo House Collectiveは2016年、再び皆様にグルーブさせ、東京にハウスのバイブをとり戻します！</p>
                             <p class="news-english">
                                 Tokyo House Collective brings you a fun filled night of music and party vibes for our Back 2 The Old Skool Sessions. Held at the swanky Wallflowers Bar we bring you a night of top quality Old Skool Soulful, Funky, Deep, Club Classics and Disco House. Our Tokyo House Collective resident Djs will keep you moving and grooving as we celebrate the Old Skool Classic Tunes from back in the day with this party you will not want to miss. Guestlist Entry is only 1000 yen plus 1 drink on Facebook Event Page so click and see you there for a night of pure Old Skool/Classic house music vibes. Tokyo House Collective is here to make you groove again for 2016 and bring the house feeling back to Tokyo!
                             </p>
-                        </p>
+                        </div>
                     </div>
-                </li>
-            </ul>
-    </div>
-    <div class="area04">
-        <div id="top04">
-            <section id="music">
-                <h2>MUSIC</h2>
-                <h3>VIDEO</h3>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/EVu-cpMuPGQ" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/4Fkl4M5mZBU" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/bAelRxSTP9A" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <h3>AUDIO</h3>
-                <div class="audio">
-                    <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FSilverfox48%2Fdj-silverfox-technomatic-dreamscape-future-mix-2016%2F" frameborder="0"></iframe>
-                    <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FSilverfox48%2Fdj-silverfox-soulful-vibes-pt2-in-da-house-mix%2F" frameborder="0"></iframe>
-                    <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FSilverfox48%2Fdj-silverfox-soultrain-street-vibes-house-club-mix%2F" frameborder="0"></iframe>
+                <div class="contents-title">
+                    <div class="text-contents">
+                        <div class="openBtn"><i class="fa fa-chevron-down faColor"></i>
+                            <span class="headlinedate">2016.04.02</span>
+                            <br>
+                            <span class="headlinetitle">TOKYO HOUSE COLLECTIVE CHERRY BLOSSOM SESSIONS</span>
+                        </div>
+                        <div class="textArea">
+                            <p class="news-japanese">
+                                The First House Bar Roppongiにて、Tokyo House NationがCesarの birthdayTokyo House CollectiveがスタイリッシュなWallflowers Barで開催するCherry Blossom Sessionsでは、最新のハウス音楽を聴きながら、パーティーの雰囲気をじっくりお楽しみいただけます。Tokyo House CollectiveのレジデントDJたちがあなたを躍らせます。参加者全員で桜のシーズンを思い切り楽しみましょう。お見逃しなく！
+                                <br> Facebookのイベントで「参加する」を押すと入場料が1000円（1ドリンク付き）となります。皆様のご参加をお待ちしております！ https://www.facebook.com/events/953376074731954/
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <div class="contents-title">
+                    <div class="text-contents">
+                        <div class="openBtn"><i class="fa fa-chevron-down faColor"></i>
+                            <span class="headlinedate">2016.03.05</span>
+                            <br>
+                            <span class="headlinetitle">Tokyo House Collective Session 9</span>
+                        </div>
+                        <div class="textArea">
+                            <p class="news-japanese">
+                                TONIGHT Tokyo House Collective Session 9 @Wallflowers Bar 8時間もの最高のアンダーグラウンド House (Soulful, Funky, Deep, Jazzy, Uplifting), UK & US Garageそしてクラシックを一緒に楽しみましょう！ レジデントDJの経験・音楽的才能をパーティーピープルなお客様にお届けします。皆様を笑顔し、 夜通し踊りたくなるような洗練された最高のハウスミュージックのみを流します！ Tokyo House Collectiveは2016年、再び皆様にグルーブさせ、東京にハウスのバイブをとり戻します！
+                        </div>
+                    </div>
+                </div>
+                <div class="contents-title">
+                    <div class="text-contents">
+                        <div class="openBtn"><i class="fa fa-chevron-down faColor"></i>
+                            <span class="headlinedate">2016.02.20</span>
+                            <br>
+                            <span class="headlinetitle">Tokyo House Collective Session 8</span>
+                        </div>
+                        <div class="textArea">
+                            <p class="news-japanese">
+                                8時間もの最高のアンダーグラウンド House (Soulful, Funky, Deep, Jazzy, Uplifting), UK & US Garageそしてクラシックを一緒に楽しみましょう！ レジデントDJの経験・音楽的才能をパーティーピープルなお客様にお届けします。皆様を笑顔し、 夜通し踊りたくなるような洗練された最高のハウスミュージックのみを流します！ Tokyo House Collectiveは2016年、再び皆様にグルーブさせ、東京にハウスのバイブをとり戻します！</p>
+                            <p class="news-english">
+                                Join us for 8 hours of the very best in Underground Soulful, Funky, Deep, Jazzy, Uplifting House, UK & US Garage, and Classics. Bringing the experience of the resident DJs musical talents straight to you the party people.. Playing only the very best House Music to make you smile and dance all night long. Tokyo House Collective is here to make you groove again for 2016 and bring the house feeling back to Tokyo!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </div>
+        <div id="linkmusic"></div>
+        <div class="area04">
+            <div id="top04">
+                <section id="music">
+                    <h2>MUSIC</h2>
+                    <div class="music-contents">
+                        <h3>VIDEO</h3>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/EVu-cpMuPGQ" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/4Fkl4M5mZBU" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/bAelRxSTP9A" allowfullscreen></iframe>
+                        </div>
+                        <h3>AUDIO</h3>
+                        <div class="audio">
+                            <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FSilverfox48%2Fdj-silverfox-technomatic-dreamscape-future-mix-2016%2F"></iframe>
+                            <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FSilverfox48%2Fdj-silverfox-soulful-vibes-pt2-in-da-house-mix%2F"></iframe>
+                            <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FSilverfox48%2Fdj-silverfox-soultrain-street-vibes-house-club-mix%2F"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="linkcontact"></div>
+        <div class="area05">
+            <section id="contact">
+                <form>
+                    <h2>CONTACT</h2>
+                    <div class="form-group">
+                        <p>
+                            <input type="name" class="form-control" placeholder="name ">
+                        </p>
+                        <p>
+                            <input type="email" class="form-control" placeholder="email ">
+                        </p>
+                        <p>
+                            <textarea name="" class="form-control" rows="10" placeholder="comments"></textarea>
+                        </p>
+                        <button type="submit" class="btn btn-xl">submit</button>
+                    </div>
+                </form>
             </section>
         </div>
+        <footer>
+            <h2>bring the house feeling back </h2>
+            <ul class="linkimg">
+                <li class="order1">
+                    <a href="https://www.facebook.com/Wallflowersnishiazabu/"><img src="images/wallflowers.jpg" alt="wallflowers"></a>
+                </li>
+                <li class="order2">
+                    <a href=""> <img class="tokyohousecollective" src="images/tokyohousecollective.jpg" alt="tokyohousecollective"></a>
+                </li>
+                <li class="order3">
+                    <a href="http://muse-web.com/"><img class="muse" src="images/muse.jpg" alt="muse"></a>
+                </li>
+                <li class="order4">
+                    <a href="http://www.v2tokyo.com/"><img class="v2tokyo" src="images/v2tokyo.png" href="" alt=""></a>
+                </li>
+                <li class="order5">
+                    <a href="http://www.cieloclub.com/"><img class="cielo" src="images/us-cielo.jpg" alt=""></a>
+                </li>
     </div>
-    <div class="area05">
-        <section id="contact">
-            <form>
-                <h2>CONTACT</h2>
-                <div class="form-group">
-                    <p>
-                        <input type="name" class="form-control" placeholder="name ">
-                    </p>
-                    <p>
-                        <input type="email" class="form-control" placeholder="email ">
-                    </p>
-                    <p>
-                        <textarea name="" class="form-control" rows="10" placeholder="comments"></textarea>
-                    </p>
-                    <button type="submit" class="btn btn-xl">submit</button>
-                </div>
-            </form>
-        </section>
-    </div>
-    <footer>
-        <h2>bring the house feeling back </h2>
-        <div class="linkimg">
-            <img src="images/wallflowers.jpg" alt="">
-            <img src="images/tokyohousecollective.jpg" alt="">
-            <img src="images/muse.jpg" alt="">
-            <img src="images/cielo.jpg" alt="">
-            <img src="images/wallflowers.jpg" alt="">
-        </div>
     </footer>
 </body>
 
