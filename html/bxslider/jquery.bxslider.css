@@ -34,7 +34,7 @@
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;*/
 /*	border:  5px solid #fff; */
-/*	left: -5px;*/
+	left: -5px;
 /*	background: #fff;*/
 
 	/*fix other elements on the page moving (on Chrome)*/
@@ -139,7 +139,7 @@
 /* AUTO CONTROLS (START / STOP) */
 
 .bx-wrapper .bx-controls-auto {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .bx-wrapper .bx-controls-auto .bx-start {
