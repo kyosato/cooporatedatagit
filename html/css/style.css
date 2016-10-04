@@ -25,7 +25,8 @@ body {
     font-family: 'Megrim', cursive;
     color: white;
     font-size: 3.5em;
-    margin-top: 80%;
+    margin-top: 70%;
+    background-color: rgba(0, 0, 90, 0.3);
   }
   .scroll {
     display: none;
@@ -42,11 +43,11 @@ body {
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding-right: 5%;
+    padding-right: 4%;
   }
   #about #profile ul {
     margin-top: 6%;
-    line-height: 0.9em;
+    line-height: 0.8em;
   }
   #about #profile img {
     width: 100%;
@@ -59,10 +60,10 @@ body {
   #about .djs-text {
     padding-top: 1%;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 3%;
     padding-bottom: 2%;
     font-size: 0.8em;
-    line-height: 1.8em;
+    line-height: 1.7em;
   }
   #top02 {
     position: relative;
@@ -74,11 +75,14 @@ body {
   #schedule .futuretable,
   #schedule .pasttable {
     font-size: 1em;
+    padding-top: 2%;
     margin-top: 0;
+    margin-bottom: 0;
   }
   #schedule table {
     padding: 0 0;
-    font-size: 0.7em;
+    font-size: 0.75em;
+    line-height: 1.6em;
   }
   #news {
     position: relative;
@@ -142,6 +146,7 @@ body {
   .area05 #contact p {
     font-size: 0.8em;
     margin-bottom: 0;
+    margin-top: 3%;
   }
   .area05 #contact input[type="name"] {
     color: #fff;
@@ -157,9 +162,10 @@ body {
   .area05 #contact button {
     width: 30%;
     font-size: 0.8em;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
+    margin-top: 4%;
   }
-  footer {
+  footer img {
     display: none;
   }
   #linkabout {
@@ -319,6 +325,7 @@ h1 {
   position: scroll;
   width: 100%;
   text-align: center;
+  background-color: rgba(0, 0, 90, 0.3);
 }
 
 h2 {
@@ -484,6 +491,15 @@ h2 {
   bottom: 0%;
 }
 
+@media only screen and (max-width: 599px) {
+  #about .bx-controls-direction {
+    display: none;
+  }
+  #about .bx-wrapper .bx-pager {
+    display: none;
+  }
+}
+
 /* ここまでbxslider*/
 #about h2 {
   color: #000;
@@ -504,6 +520,7 @@ h2 {
 #profile {
   margin-top: 0;
   padding-left: 7%;
+  padding-right: 4%;
   display: flex;
   justify-content: space-between;
 }
@@ -672,6 +689,15 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 599px) {
+  #schedule .bx-controls-direction {
+    display: none;
+  }
+  #schedule .bx-wrapper .bx-pager {
+    display: none;
+  }
+}
+
 /* ここまでbxslider*/
 li .tables {
   text-align: center;
@@ -699,6 +725,7 @@ li .tables {
 table {
   margin-top: 3%;
   padding: 0 0%;
+  padding-right: 1%;
   position: relative;
   width: 100%;
   font-size: 1.1em;

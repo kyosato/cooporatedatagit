@@ -27,8 +27,8 @@ a {
         font-family: 'Megrim', cursive;
         color: rgba(255, 255, 255, 1);
         font-size: 3.5em;
-        margin-top: 80%;
-        // background-color: rgba(0, 0, 90, .3);
+        margin-top: 70%;
+        background-color: rgba(0, 0, 90, .3);
     }
     .scroll {
         display: none;
@@ -45,10 +45,10 @@ a {
             display: block;
             margin: 0 auto;
             text-align: center;
-            padding-right: 5%;
+            padding-right: 4%;
             ul {
                 margin-top: 6%;
-                line-height: 0.9em;
+                line-height: 0.8em;
             }
             img {
                 width: 100%;
@@ -62,10 +62,10 @@ a {
         .djs-text {
             padding-top: 1%;
             padding-left: 5%;
-            padding-right: 5%;
+            padding-right: 3%;
             padding-bottom: 2%;
             font-size: 0.8em;
-            line-height: 1.8em;
+            line-height: 1.7em;
         }
     }
     #top02 {
@@ -79,11 +79,17 @@ a {
         .futuretable,
         .pasttable {
             font-size: 1em;
+            padding-top: 2%;
             margin-top:0;
+            margin-bottom:0;
         }
+        // li .tables {
+        //     margin: 0 auto;
+        // }
         table {
             padding: 0 0;
-            font-size: 0.7em;
+            font-size: 0.75em;
+            line-height: 1.6em;
         }
     }
 
@@ -150,9 +156,11 @@ a {
         h2 {
             font-size: 1.5em;
         }
+
         p {
             font-size: 0.8em;
             margin-bottom: 0;
+            margin-top: 3%;
         }
         input[type="name"] {
             color: #fff;
@@ -161,32 +169,31 @@ a {
         input[type="email"] {
             color: #fff;
             font-size: 1.2em;
+
         }
         #contact textarea {
             font-size: 1.1em;
         }
         button {
+
             width: 30%;
             font-size: 0.8em;
-            margin-bottom: 5%;
+            margin-bottom:8%;
+            margin-top: 4%;
+
         }
     }
-    footer {
+    footer img {
         display:none;
     }
+
     #linkabout {
 position:relative;
 top:200px;
 }
-
-
     #linkschedule{
 top:150px;
     }
-
-     #linkmusic,#linkcontact{
-
-     }
 }
 
 @keyframes fadeIn {
@@ -315,7 +322,7 @@ header .nav {
 }
 }
 
-
+//////////////ここからnormalのbody////////////
 #top {
     position: fixed;
     top: 0px;
@@ -342,7 +349,7 @@ h1 {
     position: scroll;
     width: 100%;
     text-align: center;
-    // background-color: rgba(0, 0, 90, .3);
+    background-color: rgba(0, 0, 90, .3);
 }
 
 h2 {
@@ -508,6 +515,14 @@ h2 {
     bottom: 0%;
 }
 
+@media only screen and (max-width: 599px) {
+    #about .bx-controls-direction{
+        display: none;
+    }
+           #about .bx-wrapper .bx-pager{
+        display: none;
+    }
+}
 
 /* ここまでbxslider*/
 
@@ -529,6 +544,7 @@ h2 {
 #profile {
     margin-top: 0;
     padding-left: 7%;
+    padding-right: 4%;
     display: flex;
     justify-content: space-between;
 }
@@ -692,6 +708,14 @@ h2 {
         bottom: -3%;
     }
 }
+@media only screen and (max-width: 599px) {
+    #schedule .bx-controls-direction{
+        display: none;
+    }
+        #schedule .bx-wrapper .bx-pager{
+        display: none;
+    }
+}
 
 
 /* ここまでbxslider*/
@@ -722,6 +746,7 @@ li .tables {
 table {
     margin-top: 3%;
     padding: 0 0%;
+    padding-right: 1%;
     position: relative;
     width: 100%;
     font-size: 1.1em;
