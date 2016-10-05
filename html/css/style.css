@@ -26,7 +26,6 @@ body {
     color: white;
     font-size: 3.5em;
     margin-top: 70%;
-    background-color: rgba(0, 0, 90, 0.3);
   }
   .scroll {
     display: none;
@@ -319,13 +318,12 @@ h1 {
   display: block;
   font-family: 'Megrim', cursive;
   color: white;
-  font-size: 6.1em;
-  margin-top: 24%;
+  font-size: 6.5em;
+  margin-top: 23%;
   margin-bottom: 0;
   position: scroll;
   width: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 90, 0.3);
 }
 
 h2 {
@@ -553,7 +551,7 @@ h2 {
 }
 
 .profile_right ul li:hover {
-  border: #000 solid 1px;
+  border: #666 solid 1px;
 }
 
 .profile_right ul li img {
@@ -566,7 +564,7 @@ h2 {
 .profile_right .twitter-header,
 .profile_right .mixcloud-header,
 .profile_right .instagram-header {
-  border: #666 solid 1px;
+  border: #000 solid 1px;
   border-radius: 3px;
 }
 
